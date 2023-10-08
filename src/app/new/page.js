@@ -115,7 +115,7 @@ const TaskFormPage = ({ params }) => {
             <td className="border px-4 py-2">Que Informacion de red  tiene el equipo</td>
           </tr>
           <tr>
-            <td className="border px-4 py-2">fecha de compra</td>
+            <td className="border px-4 py-2">Fecha de compra</td>
             <td className="border px-4 py-2">La descripción de la facha de compra </td>
           </tr>
           <tr>
