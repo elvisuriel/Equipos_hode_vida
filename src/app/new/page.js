@@ -37,8 +37,8 @@ const TaskFormPage = ({ params }) => {
   }, []);
 
   return (
-    <div className="flex justify-center items-center h-full">
-      <form className="bg-gray-700 p-10" onSubmit={onSubmit}>
+    <div className="flex flex-col-1 lg:flex-row justify-center items-center h-full">
+      <form className="bg-gray-700 p-10 lg:w-1/2 " onSubmit={onSubmit}>
         <h1 className="text-3xl mb-3">
           {params.id ? "Edit Pc" : "New Pc"}
         </h1>
@@ -60,7 +60,7 @@ const TaskFormPage = ({ params }) => {
             </span>
           )}
         </div>
-  
+
         <div className="mb-2">
           <label htmlFor="description" className="block text-gray-300">
             Description
@@ -78,14 +78,16 @@ const TaskFormPage = ({ params }) => {
             </span>
           )}
         </div>
-  
+
         <button className="bg-green-500 hover:bg-green-400 px-4 py-2 rounded-sm disabled:opacity-30">
           Save
         </button>
       </form>
   
-      {/* Tabla de descripciones */}
-      <table className="table-auto mt-4">
+     <div>
+
+     
+      <table className=" flex flex-col table-auto mt-4">
         <thead>
           <tr>
             <th className="px-4 py-2">Campo</th>
@@ -136,6 +138,7 @@ const TaskFormPage = ({ params }) => {
           </tr>
         </tbody>
       </table>
+      </div>
     </div>
    );
   };
